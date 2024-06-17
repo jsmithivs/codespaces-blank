@@ -14,5 +14,3 @@ def get_secret(secret_name: str):
     retrieved_secret = client.get_secret(secret_name)
     print(f"Your secret is '{retrieved_secret.value}'.")
     return retrieved_secret.value
-
-get_secret("cw-private-key")
